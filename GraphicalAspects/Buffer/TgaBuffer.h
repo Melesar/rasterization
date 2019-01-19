@@ -6,6 +6,7 @@
 #include <fstream>
 #include <iostream>
 #include <iomanip>
+#include <bitset>
 
 class TgaBuffer : public Buffer, public ITgaSavable
 {
@@ -31,35 +32,42 @@ private:
 		WithPalette = 9, TrueColor, Monochromatic
 	};
 
+	enum PixelsOrigin
+	{
+		BottomLeft, BottomRight, TopLeft, TopRight
+	};
+
 	struct TgaHeader
 	{
 		char identifierLength;
 		bool colorMapExists;
 
+		ImageType imageType;
+
 		short colorMapIndex;
 		short colorMapLength;
 		char colorMapElementSize;
 
-		ImageType imageType;
-
+		short x;
+		short y;
+		short width;
+		short height;
 		ImageDepth colorDepth;
-		short x, y;
-		short width, height;
 
 		char imageDescriptor;
 
-		int getAlphaSize() const
-		{
+		short getAlphaSize() const;
+		void setAlphaSize(short size);
 
-		}
+		PixelsOrigin  getPixelsOrigin() const;
+		void setPixelsOrigin(PixelsOrigin origin);
 
-		bool isLeftRight() const
-		{
-
-		}
+		TgaHeader ();
 	};
 
-	void parseHeader (std::ifstream& s, TgaHeader& h);
+	TgaHeader header;
+
+	void parseHeader (std::istream& s, TgaHeader& h);
 
 	friend std::ostream& operator << (std::ostream& s, const TgaHeader& h);
 };

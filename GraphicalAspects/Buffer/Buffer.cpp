@@ -60,6 +60,6 @@ Buffer::Buffer(int x, int y, int width, int height)
 
 unsigned Buffer::read(int x, int y) const
 {
-	auto index = y * width() + x;
+	auto index = (height() - y - 1) * width() + (width() - x - 1);
     return _color[index];
 }

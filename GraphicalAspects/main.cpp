@@ -29,8 +29,9 @@ int main ()
 	rastr.addLight(&dirLight);
 
 	auto stoneTexture = Texture("stone.tga");
+	stoneTexture.save("texture_test.tga");
+	TgaBuffer b ("texture_test.tga");
 	auto wolfTexture = Texture("grass.tga");
-	wolfTexture.save("texture_test.tga");
 
 	auto teapot = std::unique_ptr<Mesh>(Mesh::create("teapot.obj"));
 	vp.setIdentity();
@@ -80,4 +81,6 @@ int main ()
     cylinder.draw(rastr, vp);
 
     buff.save("f.tga");
+
+    TgaBuffer f ("f.tga");
 }
