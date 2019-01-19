@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GraphicalAspects"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GraphicalAspects">
+				<Option output="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/GraphicalAspects.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 GraphicalAspects"/>
+					<CompileFile command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GraphicalAspects/fast">
+				<Option output="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/GraphicalAspects.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests"/>
+					<Add directory="C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Content/Programs/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 GraphicalAspects/fast"/>
+					<CompileFile command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Content/Programs/MinGW/mingw32/bin/mingw32-make.exe -f &quot;C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/ITgaSavable.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/TgaBuffer.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/TgaBuffer.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Light/light.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Light/light.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/main_tests.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/main.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

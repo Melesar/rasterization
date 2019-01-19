@@ -1,0 +1,3 @@
+C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir
+C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
