@@ -6,7 +6,7 @@ const float PI = 3.14159265358979323846f;
 
 const float3 UNIDENTIFIED_NORMAL = {0, 0, 0};
 
-enum ImageDepth {NoAlpha = 24, WithAlpha = 32};
+enum ImageDepth : char {NoAlpha = 24, WithAlpha = 32};
 
 inline float clamp01 (float v)
 {
