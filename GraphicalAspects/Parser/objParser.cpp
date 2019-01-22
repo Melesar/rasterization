@@ -107,9 +107,9 @@ void ObjParser::parseFace(std::stringstream & stream, std::vector<Triangle>& tri
 			t.v2 = faceVerticies.at(i + 1);
 			t.v3 = faceVerticies.at(i + 2);
 
-			if (normals.empty()) {
-			    t.calculateNormals();
-			}
+//			if (normals.empty()) {
+//			    t.calculateNormals();
+//			}
 
 			triangles.push_back(t);
 		}

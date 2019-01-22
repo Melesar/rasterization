@@ -1,6 +1,6 @@
 ﻿#include "mesh.h"
 #include "Texture/texture.h"
-#include "../Parser/objParser.h"
+#include "Parser/objParser.h"
 #include <iostream>
 
 void Mesh::draw(const Rasterizer& r, VertexProcessor& vp) const

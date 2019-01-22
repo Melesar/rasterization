@@ -30,11 +30,11 @@ int Triangle::checkBarycentric(float l1, float l2, float l3) const
 
 void Triangle::calculateNormals()
 {
-//	auto u = p2 - p1;
-//	auto v = p3 - p1;
-//	auto n = cross(u, v);
-//
-//	n1 = n2 = n3 = normalize(n);
+	auto u = p2 - p1;
+	auto v = p3 - p1;
+	auto n = cross(u, v);
+
+	n1 = n2 = n3 = normalize(n);
 }
 
 float3 Triangle::getNormal() const

@@ -70,7 +70,8 @@ int main ()
 
 	auto cone = ConeMesh(3, 4);
 	vp.setIdentity();
-	vp.multByTranslation({7, 5, -20});
+	vp.multByTranslation({0, 0.5f, -10});
+//	vp.multByTranslation({7, 5, -20});
 	cone.setColor({0, 1, 0});
 	//cone.draw(rastr, vp);
 
@@ -79,11 +80,11 @@ int main ()
     vp.multByTranslation({-8, 4, -20});
     //cone.draw(rastr, vp);
 
-    auto cylinder = CylinderMesh({0, 0, 0}, 4, 6, 64);
-    vp.setIdentity();
-    vp.multByTranslation({4, -6.f, -15.f});
-    cylinder.setColor({0, 0, 1});
-    cylinder.draw(rastr, vp);
+	auto cylinder = CylinderMesh({0, 0, 0}, 4, 6, 16);
+	vp.setIdentity();
+	vp.multByTranslation({4, -6.f, -15.f});
+	cylinder.setColor({0, 0, 1});
+	cylinder.draw(rastr, vp);
 
     buff.save("f.tga");
 }

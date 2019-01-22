@@ -7,14 +7,14 @@ ConeMesh::ConeMesh(float radius, float height, int resolution)
 {
 	makeVertices();
 	makeIndices();
-	//calculateNormals();
+	calculateNormals();
 }
 
 void ConeMesh::makeVertices()
 {
 	vertices.emplace_back(float3{0, 0, 0});
 
-	const float angleStep = 360.f / resolution;
+	const float angleStep = (360.f / resolution) * PI / 180.f;
 	for (int i = 0; i < resolution; ++i)
 	{
 		auto x = cos(i * angleStep) * radius;
@@ -32,8 +32,8 @@ void ConeMesh::makeIndices()
     for (int i = 1; i <= resolution; ++i)
 	{
 		auto next = i + 1 <= resolution ? i + 1 : i + 1 - resolution;
-		indices.emplace_back(int3{ i, iTop, next });
-		indices.emplace_back(int3{ i, next, 0 });
+		indices.emplace_back(int3{ next, iTop, i   });
+		indices.emplace_back(int3{ 0, next, i });
 	}
 }
 

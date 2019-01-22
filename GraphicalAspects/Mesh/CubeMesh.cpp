@@ -24,7 +24,7 @@ CubeMesh::CubeMesh(const float3& extents)
 	indices.emplace_back(int3{ 6, 5, 4 });
 	indices.emplace_back(int3{ 4, 7, 6 });
 
-	calculateNormals();
+	//calculateNormals();
 }
 
 float3 CubeMesh::getSize() const

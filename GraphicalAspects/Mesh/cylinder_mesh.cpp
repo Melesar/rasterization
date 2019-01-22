@@ -12,13 +12,13 @@ CylinderMesh::CylinderMesh(const float3& center, float radius, int verticalSegme
 {
 	makeVertices();
 	makeIndices();
-	calculateNormals();
+	//calculateNormals();
 }
 
 void CylinderMesh::makeVertices()
 {
 	const auto centerBottom = float3 {0, 0, 0};
-	const auto centerTop = center + float3{ 0, verticalSegments * segmentLength, 0 };
+	const auto centerTop = centerBottom + float3{ 0, verticalSegments * segmentLength, 0 };
 
 	vertices.emplace_back(centerBottom);
 
@@ -26,8 +26,9 @@ void CylinderMesh::makeVertices()
 	{
 		for (int j = 0; j < horizontalSegments; ++j)
 		{
-			auto c = cos(j * angleStep);
-			auto s = sin(j * angleStep);
+			auto rad = (j * angleStep) * PI / 180.f;
+			auto c = cos(rad);
+			auto s = sin(rad);
 			float x = c * radius;
 			float y = i * segmentLength;
 			float z = s * radius;
@@ -41,19 +42,27 @@ void CylinderMesh::makeVertices()
 
 void CylinderMesh::makeIndices()
 {
-	for (int i = 0; i < horizontalSegments - 1; ++i)
+	for (int i = 0; i < verticalSegments; ++i)
 	{
-		indices.emplace_back(int3{ 0, i + 1, i + 2 });
-		for (int j = 0; j < verticalSegments; ++j)
+		for(int j = 0; j < horizontalSegments; j++)
 		{
-			auto cur = j * horizontalSegments;
-			auto next = (j + 1) * horizontalSegments;
+			auto current = i * horizontalSegments + j + 1;
+			auto next = current + horizontalSegments;
 
-			indices.emplace_back(int3{cur + i + 1, next + i + 1, cur + i + 2});
-			indices.emplace_back(int3{next + i + 1, next + i + 2, cur + i + 2});
+			indices.emplace_back(int3{current, current + 1, next});
+			indices.emplace_back(int3{current + 1, next + 1, next});
 		}
+	}
 
-		auto ii = verticalSegments  * horizontalSegments + i;
-		indices.emplace_back(int3{ ii + 1, int(vertices.size()) - 1, ii + 2 });
+	for(int i = 0; i < horizontalSegments; i++)
+	{
+		auto bottom = i + 1;
+		auto top = bottom + verticalSegments * horizontalSegments;
+
+		int3 tris {top, top + 1, (int) vertices.size() - 1};
+		indices.emplace_back(tris);
+		vertices[tris.a].normal = float3{0, 1, 0};
+		vertices[tris.b].normal = float3{0, 1, 0};
+		vertices[tris.c].normal = float3{0, 1, 0};
 	}
 }
