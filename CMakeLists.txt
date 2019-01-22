@@ -47,6 +47,6 @@ add_executable(GraphicalAspects
         GraphicalAspects/VertexProcessor/VertexProcessor.cpp
         GraphicalAspects/VertexProcessor/VertexProcessor.h
         GraphicalAspects/main.cpp
-        GraphicalAspects/utils.h GraphicalAspects/Light/Light.h GraphicalAspects/Light/light.cpp GraphicalAspects/Texture/texture.h GraphicalAspects/Texture/texture.cpp)
+        GraphicalAspects/utils.h GraphicalAspects/Light/Light.h GraphicalAspects/Light/light.cpp GraphicalAspects/Texture/texture.h GraphicalAspects/Texture/texture.cpp GraphicalAspects/Timer/timer.cpp GraphicalAspects/Timer/timer.h)
 
 #target_link_libraries(GraphicalAspects ${SDL2_LIBRARIES})

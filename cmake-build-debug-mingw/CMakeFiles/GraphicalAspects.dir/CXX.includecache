@@ -40,6 +40,14 @@ memory
 Data/math_structs.h
 -
 
+../GraphicalAspects/Timer/timer.h
+string
+-
+stack
+-
+chrono
+-
+
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
 ../Data/math_structs.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
@@ -155,6 +163,8 @@ Mesh/cylinder_mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
 utils.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
+Timer/timer.h
+-
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
 Data/math_structs.h

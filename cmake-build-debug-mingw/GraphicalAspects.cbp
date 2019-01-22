@@ -192,6 +192,12 @@
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Timer/timer.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Timer/timer.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.cpp">
 			<Option target="GraphicalAspects"/>
 		</Unit>

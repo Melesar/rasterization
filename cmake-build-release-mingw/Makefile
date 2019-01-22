@@ -527,6 +527,33 @@ GraphicalAspects/Texture/texture.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.s
 .PHONY : GraphicalAspects/Texture/texture.cpp.s
 
+GraphicalAspects/Timer/timer.obj: GraphicalAspects/Timer/timer.cpp.obj
+
+.PHONY : GraphicalAspects/Timer/timer.obj
+
+# target to build an object file
+GraphicalAspects/Timer/timer.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj
+.PHONY : GraphicalAspects/Timer/timer.cpp.obj
+
+GraphicalAspects/Timer/timer.i: GraphicalAspects/Timer/timer.cpp.i
+
+.PHONY : GraphicalAspects/Timer/timer.i
+
+# target to preprocess a source file
+GraphicalAspects/Timer/timer.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.i
+.PHONY : GraphicalAspects/Timer/timer.cpp.i
+
+GraphicalAspects/Timer/timer.s: GraphicalAspects/Timer/timer.cpp.s
+
+.PHONY : GraphicalAspects/Timer/timer.s
+
+# target to generate assembly for a file
+GraphicalAspects/Timer/timer.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.s
+.PHONY : GraphicalAspects/Timer/timer.cpp.s
+
 GraphicalAspects/VertexProcessor/VertexProcessor.obj: GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj
 
 .PHONY : GraphicalAspects/VertexProcessor/VertexProcessor.obj
@@ -635,6 +662,9 @@ help:
 	@echo ... GraphicalAspects/Texture/texture.obj
 	@echo ... GraphicalAspects/Texture/texture.i
 	@echo ... GraphicalAspects/Texture/texture.s
+	@echo ... GraphicalAspects/Timer/timer.obj
+	@echo ... GraphicalAspects/Timer/timer.i
+	@echo ... GraphicalAspects/Timer/timer.s
 	@echo ... GraphicalAspects/VertexProcessor/VertexProcessor.obj
 	@echo ... GraphicalAspects/VertexProcessor/VertexProcessor.i
 	@echo ... GraphicalAspects/VertexProcessor/VertexProcessor.s
