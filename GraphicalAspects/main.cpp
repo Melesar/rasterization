@@ -29,8 +29,6 @@ int main ()
 	rastr.addLight(&dirLight);
 
 	auto stoneTexture = Texture("stone.tga");
-	stoneTexture.save("texture_test.tga");
-	TgaBuffer b ("texture_test.tga");
 	auto wolfTexture = Texture("grass.tga");
 
 	auto teapot = std::unique_ptr<Mesh>(Mesh::create("teapot.obj"));
@@ -49,11 +47,18 @@ int main ()
 	wolf->setTexture(&wolfTexture);
 	wolf->draw(rastr, vp);
 
+	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
+	vp.setIdentity();
+	vp.multByScale({0.8f, 0.8f, 0.8f});
+    vp.multByTranslation({0.f, 1.5f, -5.f});
+    sphere->setColor({1.f, 0.f, 0.f});
+    sphere->draw(rastr, vp);
+
 	auto cube = CubeMesh({2, 2, 2});
 	vp.setIdentity();
 	vp.multByScale({0.3f, 0.3f, 0.3f});
 	vp.multByRotation({0, 1.f, 0}, 45.f);
-	vp.multByTranslation({0.f, 4.f, -20.f});
+	vp.multByTranslation({-6.f, 4.f, -20.f});
 	cube.setColor({1, -0.5f, 0});
 	cube.draw(rastr, vp);
 
@@ -67,12 +72,12 @@ int main ()
 	vp.setIdentity();
 	vp.multByTranslation({7, 5, -20});
 	cone.setColor({0, 1, 0});
-	cone.draw(rastr, vp);
+	//cone.draw(rastr, vp);
 
 	vp.setIdentity();
 	vp.multByRotation({0, 0.6f, 0.6f}, 57.f);
     vp.multByTranslation({-8, 4, -20});
-    cone.draw(rastr, vp);
+    //cone.draw(rastr, vp);
 
     auto cylinder = CylinderMesh({0, 0, 0}, 4, 6, 64);
     vp.setIdentity();
@@ -81,6 +86,4 @@ int main ()
     cylinder.draw(rastr, vp);
 
     buff.save("f.tga");
-
-    TgaBuffer f ("f.tga");
 }

@@ -40,18 +40,6 @@ memory
 Data/math_structs.h
 -
 
-../GraphicalAspects/VertexProcessor/VertexProcessor.h
-../Data/math_structs.h
-../GraphicalAspects/Data/math_structs.h
-../Data/Triangle.h
-../GraphicalAspects/Data/Triangle.h
-
-../GraphicalAspects/utils.h
-Data/math_structs.h
-../GraphicalAspects/Data/math_structs.h
-complex
--
-
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
 ../Data/math_structs.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
@@ -67,6 +55,14 @@ ITgaSavable.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/ITgaSavable.h
 Buffer.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
+fstream
+-
+iostream
+-
+iomanip
+-
+bitset
+-
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
 algorithm
@@ -87,14 +83,6 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
-
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.cpp
-cmath
--
-cone_mesh.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h
-cmath
--
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h
 mesh.h

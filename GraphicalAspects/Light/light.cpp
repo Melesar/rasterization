@@ -15,7 +15,11 @@ float3 Light::calculate(const Triangle &t, float l1, float l2, float l3)
     cosine = std::fmax(cosine, 0);
 
     auto r = normal * 2 * dot(normal, dir) - dir;
-    auto spec = dot(r, -vp.getViewDirection());
+    r = normalize(r);
+
+    auto viewDir = vp.getViewDirection();
+    auto spec = dot(r, viewDir);
+    spec = std::max(0.0f, spec);
     spec = std::pow(spec, shininess);
 
     auto color = ambient + diffuse * cosine + specular * spec;
