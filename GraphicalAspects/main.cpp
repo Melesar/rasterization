@@ -10,8 +10,40 @@
 #include "Mesh/cylinder_mesh.h"
 #include "utils.h"
 #include <Timer/timer.h>
+#include <Parser/file_utils.h>
+
+void buildAndRenderScene();
+
+void test();
 
 int main ()
+{
+	test();
+	//buildAndRenderScene();
+}
+
+void test()
+{
+	FILE* f = fopen("obj-test.txt", "r");
+	char line[LINE_LENGTH];
+
+	while(readLine(f, line))
+	{
+		std::cout << line << std::endl;
+
+		char token[3];
+		char content[LINE_LENGTH - 3];
+		getToken(line, token, content);
+
+		std::cout << "Token: " << token << ", content: " << content << std::endl;
+
+		float3 value;
+		getFloat3(content, value);
+		std::cout << "Value: " << value << std::endl;
+	}
+}
+
+void buildAndRenderScene()
 {
 	Timer timer;
 	TgaBuffer buff(512, 512);
@@ -43,10 +75,10 @@ int main ()
 	wolf->setTexture(&wolfTexture);
 
 	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
-    sphere->setColor({1.f, 0.f, 0.f});
-    timer.finishSample();
+	sphere->setColor({1.f, 0.f, 0.f});
+	timer.finishSample();
 
-    timer.startSample("Meshes rendering");
+	timer.startSample("Meshes rendering");
 	vp.setIdentity();
 	vp.multByScale({0.5f, 0.5f, 0.5f});
 	vp.multByRotation({1, 0, 0}, -90.f);
@@ -79,16 +111,16 @@ int main ()
 	vp.multByTranslation({-6.f, 4.f, -20.f});
 	cube.draw(rastr, vp);
 
-    vp.setIdentity();
-    vp.multByScale({0.5f, 0.5f, 0.5f});
-    vp.multByRotation({0, 1.f, 0}, 60.f);
-    vp.multByTranslation({-6.f, -8.f, -20.f});
-    cube.draw(rastr, vp);
+	vp.setIdentity();
+	vp.multByScale({0.5f, 0.5f, 0.5f});
+	vp.multByRotation({0, 1.f, 0}, 60.f);
+	vp.multByTranslation({-6.f, -8.f, -20.f});
+	cube.draw(rastr, vp);
 
 	vp.setIdentity();
 	vp.multByTranslation({4, -6.f, -15.f});
 	cylinder.draw(rastr, vp);
 	timer.finishSample();
 
-    buff.save("f.tga");
+	buff.save("f.tga");
 }

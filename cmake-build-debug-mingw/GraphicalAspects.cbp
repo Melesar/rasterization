@@ -165,6 +165,12 @@
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.cpp">
 			<Option target="GraphicalAspects"/>
 		</Unit>

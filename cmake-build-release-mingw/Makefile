@@ -419,6 +419,33 @@ GraphicalAspects/Mesh/vertex.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.s
 .PHONY : GraphicalAspects/Mesh/vertex.cpp.s
 
+GraphicalAspects/Parser/file_utils.obj: GraphicalAspects/Parser/file_utils.cpp.obj
+
+.PHONY : GraphicalAspects/Parser/file_utils.obj
+
+# target to build an object file
+GraphicalAspects/Parser/file_utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj
+.PHONY : GraphicalAspects/Parser/file_utils.cpp.obj
+
+GraphicalAspects/Parser/file_utils.i: GraphicalAspects/Parser/file_utils.cpp.i
+
+.PHONY : GraphicalAspects/Parser/file_utils.i
+
+# target to preprocess a source file
+GraphicalAspects/Parser/file_utils.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.i
+.PHONY : GraphicalAspects/Parser/file_utils.cpp.i
+
+GraphicalAspects/Parser/file_utils.s: GraphicalAspects/Parser/file_utils.cpp.s
+
+.PHONY : GraphicalAspects/Parser/file_utils.s
+
+# target to generate assembly for a file
+GraphicalAspects/Parser/file_utils.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.s
+.PHONY : GraphicalAspects/Parser/file_utils.cpp.s
+
 GraphicalAspects/Parser/objParser.obj: GraphicalAspects/Parser/objParser.cpp.obj
 
 .PHONY : GraphicalAspects/Parser/objParser.obj
@@ -650,6 +677,9 @@ help:
 	@echo ... GraphicalAspects/Mesh/vertex.obj
 	@echo ... GraphicalAspects/Mesh/vertex.i
 	@echo ... GraphicalAspects/Mesh/vertex.s
+	@echo ... GraphicalAspects/Parser/file_utils.obj
+	@echo ... GraphicalAspects/Parser/file_utils.i
+	@echo ... GraphicalAspects/Parser/file_utils.s
 	@echo ... GraphicalAspects/Parser/objParser.obj
 	@echo ... GraphicalAspects/Parser/objParser.i
 	@echo ... GraphicalAspects/Parser/objParser.s

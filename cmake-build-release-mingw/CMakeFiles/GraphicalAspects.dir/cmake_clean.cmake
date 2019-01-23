@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj"
+  "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj"
   "GraphicalAspects.pdb"
   "GraphicalAspects.exe"
   "GraphicalAspects.exe.manifest"

@@ -91,6 +91,9 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../Graphic
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Mesh/vertex.cpp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
 
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../GraphicalAspects/Parser/file_utils.cpp
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../GraphicalAspects/Parser/file_utils.h
+
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/Triangle.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/math_structs.h
@@ -123,6 +126,9 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj: ../Gra
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj: ../GraphicalAspects/Texture/texture.cpp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj: ../GraphicalAspects/Texture/texture.h
 
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj: ../GraphicalAspects/Timer/timer.cpp
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj: ../GraphicalAspects/Timer/timer.h
+
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj: ../GraphicalAspects/Data/Triangle.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj: ../GraphicalAspects/Data/math_structs.h
@@ -134,7 +140,9 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspec
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Light/light.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Parser/file_utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Texture/texture.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Timer/timer.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Buffer/Buffer.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Buffer/ITgaSavable.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/Buffer/TgaBuffer.h

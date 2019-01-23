@@ -104,6 +104,10 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj
  ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
@@ -155,6 +159,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj
  ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Light/light.h
  ../GraphicalAspects/Mesh/vertex.h
+ ../GraphicalAspects/Parser/file_utils.h
  ../GraphicalAspects/Texture/texture.h
  ../GraphicalAspects/Timer/timer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
