@@ -75,14 +75,17 @@ void buildAndRenderScene()
 	timer.finishSample();
 
 	timer.startSample("Meshes creation");
-	auto teapot = std::unique_ptr<Mesh>(Mesh::create("teapot.obj"));
-	teapot->setTexture(&stoneTexture);
+//	auto teapot = std::unique_ptr<Mesh>(Mesh::create("teapot.obj"));
+//	teapot->setTexture(&stoneTexture);
+//	std::cout << "Teapot tris: " << teapot->trisCount() << std::endl;
 
 	auto wolf = std::unique_ptr<Mesh>(Mesh::create("Wolf.obj"));
 	wolf->setTexture(&wolfTexture);
+	std::cout << "Wolf tris: " << wolf->trisCount() << std::endl;
 
-	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
-	sphere->setColor({1.f, 0.f, 0.f});
+//	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
+//	sphere->setColor({1.f, 0.f, 0.f});
+//	std::cout << "Sphere tris: " << sphere->trisCount() << std::endl;
 	timer.finishSample();
 
 	timer.startSample("Meshes rendering");
@@ -90,7 +93,7 @@ void buildAndRenderScene()
 	vp.multByScale({0.5f, 0.5f, 0.5f});
 	vp.multByRotation({1, 0, 0}, -90.f);
 	vp.multByTranslation({ 5.f, -1.f, -15 });
-	teapot->draw(rastr, vp);
+//	teapot->draw(rastr, vp);
 
 	vp.setIdentity();
 	vp.multByScale({1.5f, 1.5f, 1.5f});
@@ -101,7 +104,7 @@ void buildAndRenderScene()
 	vp.setIdentity();
 	vp.multByScale({0.8f, 0.8f, 0.8f});
 	vp.multByTranslation({0.f, 1.5f, -5.f});
-	sphere->draw(rastr, vp);
+//	sphere->draw(rastr, vp);
 	timer.finishSample();
 
 	auto cube = CubeMesh({2, 2, 2});

@@ -53,7 +53,8 @@ void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const
 				vert.normal = normals[v.normalIndex];
 			}
 
-            faceVertices[verticesParsed++] = vert;
+			std::cout << v << std::endl;
+			faceVertices[verticesParsed++] = vert;
 		}
 
 		if (verticesParsed < 3) {
