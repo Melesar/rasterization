@@ -74,16 +74,17 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj: ../
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj: ../GraphicalAspects/Rasterizer/Rasterizer.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj: ../GraphicalAspects/VertexProcessor/VertexProcessor.h
 
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Data/Triangle.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Parser/objParser.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Texture/texture.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/VertexProcessor/VertexProcessor.h
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Data/Triangle.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Mesh/mesh.cpp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Mesh/mesh.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Parser/objParser.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/Rasterizer/Rasterizer.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../GraphicalAspects/VertexProcessor/VertexProcessor.h
 
@@ -91,10 +92,14 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../Graphic
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Mesh/vertex.cpp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
 
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../GraphicalAspects/Parser/file_utils.cpp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../GraphicalAspects/Parser/file_utils.h
 
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Parser/file_utils.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/Triangle.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Mesh/vertex.h

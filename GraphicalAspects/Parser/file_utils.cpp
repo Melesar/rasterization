@@ -44,7 +44,7 @@ void getToken(char *line, char *token, char *content)
 
 void getFloat3(char *content, float3 &f)
 {
-    const int precision = 10;
+    const int precision = 13;
     char buff[precision];
 
     int offset = 0;

@@ -19,12 +19,14 @@ void test();
 
 int main ()
 {
-	test();
-	//buildAndRenderScene();
+	//test();
+	buildAndRenderScene();
 }
 
 void test()
 {
+	auto m = Mesh::create("sphere.OBJ");
+
 	FILE* f = fopen("obj-test.txt", "r");
 	char line[LINE_LENGTH];
 
@@ -52,6 +54,7 @@ void test()
 void buildAndRenderScene()
 {
 	Timer timer;
+	timer.startSample("Program");
 	TgaBuffer buff(512, 512);
 
 	VertexProcessor vp;
@@ -129,4 +132,5 @@ void buildAndRenderScene()
 	timer.finishSample();
 
 	buff.save("f.tga");
+	timer.finishSample();
 }

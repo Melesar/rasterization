@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <Data/math_structs.h>
 
-const int LINE_LENGTH = 75;
+const int LINE_LENGTH = 100;
 
 bool readLine (FILE* f, char* buff);
 void getToken(char* line, char* token, char* content);

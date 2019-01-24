@@ -110,6 +110,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../G
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Parser/file_utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/Triangle.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj: ../GraphicalAspects/Data/math_structs.h

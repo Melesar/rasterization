@@ -122,18 +122,6 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
 utils.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/utils.h
 
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp
-cstring
--
-file_utils.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h
-
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h
-cstdio
--
-Data/math_structs.h
--
-
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
 ../Data/Triangle.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h

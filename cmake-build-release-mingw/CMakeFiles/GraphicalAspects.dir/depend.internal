@@ -75,16 +75,17 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj
+ ../GraphicalAspects/Data/Triangle.h
  ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
+ ../GraphicalAspects/Parser/objParser.h
  ../GraphicalAspects/Texture/texture.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
- C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
- C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj
@@ -92,10 +93,14 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
+ ../GraphicalAspects/Parser/file_utils.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
