@@ -79,3 +79,73 @@ void getFloat3(char *content, float3 &f)
     *(reinterpret_cast<float*>(&f) + numberIndex) = strtof(buff, nullptr);
 }
 
+inline void updateData(VertexData &data, char *buffer, int bufferIndex, int vertexIndex)
+{
+    buffer[bufferIndex] = '\0';
+    int value = (int) strtol(buffer, nullptr, 10);
+    if ((vertexIndex) == 0) {
+        data.posIndex = value;
+    } else if ((vertexIndex) == 1) {
+        data.uvIndex = value;
+    } else if ((vertexIndex) == 2) {
+        data.normalIndex = value;
+    }
+}
+
+bool getVertex(char *content, VertexData &vData)
+{
+    static int vertexIndex = 0;
+    static char* ptr = content;
+
+    if (ptr == nullptr) {
+        ptr = content;
+    }
+
+    if (*ptr == '\0') {
+        ptr = nullptr;
+        return false;
+    }
+
+    char* s = ptr;
+    char buff [10];
+    int offset = 0;
+    int i = 0;
+    while (*s != '\0')
+    {
+        if (*s == ' ')
+        {
+            updateData(vData, buff, i - offset, vertexIndex);
+            ptr = s + 1;
+            vertexIndex = 0;
+            return true;
+        }
+
+        if (*s == '/')
+        {
+            updateData(vData, buff, i - offset, vertexIndex);
+            offset = i + 1;
+            vertexIndex += 1;
+            s = ptr + ++i;
+        }
+
+        buff[i - offset] = *s;
+        s = ptr + ++i;
+    }
+
+    updateData(vData, buff, i - offset, vertexIndex);
+    *ptr = '\0';
+    vertexIndex = 0;
+    return true;
+}
+
+std::ostream &operator<<(std::ostream &s, const VertexData &data)
+{
+    s << "Position: " << data.posIndex << " ";
+    if (data.uvIndex > 0) {
+        s << "uv: " << data.uvIndex << " ";
+    }
+    if (data.normalIndex > 0) {
+        s << "normal: " << data.normalIndex;
+    }
+    return s;
+}

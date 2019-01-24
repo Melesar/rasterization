@@ -11,6 +11,7 @@
 #include "utils.h"
 #include <Timer/timer.h>
 #include <Parser/file_utils.h>
+#include <cstring>
 
 void buildAndRenderScene();
 
@@ -35,11 +36,16 @@ void test()
 		char content[LINE_LENGTH - 3];
 		getToken(line, token, content);
 
-		std::cout << "Token: " << token << ", content: " << content << std::endl;
-
-		float3 value;
-		getFloat3(content, value);
-		std::cout << "Value: " << value << std::endl;
+		if (strcmp(token, "v") == 0 || strcmp(token, "vn") == 0) {
+		    float3 value;
+		    getFloat3(content, value);
+		    std::cout << token << ": " << value << std::endl;
+		} else if (strcmp(token, "f") == 0) {
+		    VertexData v;
+		    while (getVertex(content, v)) {
+		        std::cout << "Vertex: " << v << std::endl;
+		    }
+		}
 	}
 }
 
