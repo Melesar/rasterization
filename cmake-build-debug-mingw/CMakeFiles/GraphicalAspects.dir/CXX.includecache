@@ -32,12 +32,36 @@ VertexProcessor/VertexProcessor.h
 utils.h
 ../GraphicalAspects/Mesh/utils.h
 
+../GraphicalAspects/Parser/objParser.h
+string
+-
+vector
+-
+map
+-
+../Data/Triangle.h
+../GraphicalAspects/Data/Triangle.h
+../Mesh/vertex.h
+../GraphicalAspects/Mesh/vertex.h
+
 ../GraphicalAspects/Texture/texture.h
 string
 -
 memory
 -
 Data/math_structs.h
+-
+
+../GraphicalAspects/VertexProcessor/VertexProcessor.h
+../Data/math_structs.h
+../GraphicalAspects/Data/math_structs.h
+../Data/Triangle.h
+../GraphicalAspects/Data/Triangle.h
+
+../GraphicalAspects/utils.h
+Data/math_structs.h
+../GraphicalAspects/Data/math_structs.h
+complex
 -
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
@@ -76,21 +100,55 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
 ostream
 -
 
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.cpp
+CubeMesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.h
+cassert
+-
+
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.cpp
+TriangleMesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.h
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
 
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.cpp
+cmath
+-
+cone_mesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h
+cmath
+-
+
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
 
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.cpp
+cylinder_mesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
+cmath
+-
+
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.cpp
+mesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
+Texture/texture.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Texture/texture.h
+Parser/objParser.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Parser/objParser.h
+iostream
+-
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
 ../Rasterizer/Rasterizer.h

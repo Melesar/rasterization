@@ -10,6 +10,9 @@ public:
 
 	void draw(const Rasterizer& r, VertexProcessor& vp) const;
 
+	int vertexCount() const { return vertices.size(); }
+	int trisCount() const { return indices.size(); }
+
 	void setVertices(const std::vector<Vertex>& vertices);
 	void setIndices(const std::vector<int3>& indices);
 	void setColor(const float3& color);

@@ -25,25 +25,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98db33f0-8149-40c6-a7c5-e3f4cf6c2b8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Data/Triangle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Data/Triangle.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Mesh/CubeMesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Mesh/CubeMesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Mesh/cone_mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Mesh/cone_mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Mesh/cylinder_mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Mesh/cylinder_mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Parser/objParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Parser/objParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GraphicalAspects/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GraphicalAspects/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Data/Triangle.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Data/Triangle.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/CubeMesh.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/CubeMesh.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cone_mesh.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cone_mesh.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/GraphicalAspects.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/GraphicalAspects.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/f.tga" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw/f.tga" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Buffer/Buffer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Buffer/TgaBuffer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Data/Triangle.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Data/math_structs.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/CubeMesh.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cone_mesh.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw/GraphicalAspects.exe" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-mingw/" />
@@ -57,26 +58,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-MinGW" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Light/light.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GraphicalAspects/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Data/Triangle.cpp">
+        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-821">
-              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -84,74 +79,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GraphicalAspects/Parser/objParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+            <state relative-caret-position="60">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.cpp">
+        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/vertex.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Rasterizer/Rasterizer.cpp">
+        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/vertex.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="20">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/cone_mesh.cpp">
+        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Parser/objParser.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/VertexProcessor/VertexProcessor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/cylinder_mesh.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="80">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -181,7 +137,6 @@
         <option value="$PROJECT_DIR$/include/SDL2/sdl2-config.cmake" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/GraphicalAspects/Buffer/ITgaSavable.h" />
-        <option value="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h" />
         <option value="$PROJECT_DIR$/GraphicalAspects/Rasterizer/Rasterizer.h" />
         <option value="$PROJECT_DIR$/GraphicalAspects/Data/math_structs.cpp" />
         <option value="$PROJECT_DIR$/GraphicalAspects/Tests/tests.h" />
@@ -205,6 +160,7 @@
         <option value="$PROJECT_DIR$/GraphicalAspects/Data/Triangle.cpp" />
         <option value="$PROJECT_DIR$/GraphicalAspects/Mesh/cylinder_mesh.cpp" />
         <option value="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.cpp" />
+        <option value="$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h" />
         <option value="$PROJECT_DIR$/GraphicalAspects/main.cpp" />
       </list>
     </option>
@@ -253,6 +209,18 @@
               <item name="GraphicalAspects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="GraphicalAspects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="GraphicalAspects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="GraphicalAspects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Light" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="GraphicalAspects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="GraphicalAspects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Parser" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -324,7 +292,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99781000" />
+    <option name="totallyTimeSpent" value="99988000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,9 +305,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24026845" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25033557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -351,7 +318,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.31586403" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3555241" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.43342775" />
@@ -491,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphicalAspects/Parser/objParser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="80">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -661,18 +628,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/vertex.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="20">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/vertex.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#13#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -714,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/CubeMesh.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -728,13 +685,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GraphicalAspects/Parser/objParser.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -819,13 +769,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GraphicalAspects/Parser/objParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraphicalAspects/Mesh/mesh.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GraphicalAspects/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="89" column="1" lean-forward="true" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>

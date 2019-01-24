@@ -38,6 +38,7 @@ int main ()
 	vp.multByTranslation({ 5.f, -1.f, -15 });
 	teapot->setTexture(&stoneTexture);
 	teapot->draw(rastr, vp);
+	std::cout << "Teapot tris: " << teapot->trisCount() << std::endl;
 
 	auto wolf = std::unique_ptr<Mesh>(Mesh::create("Wolf.obj"));
 	vp.setIdentity();
@@ -46,6 +47,7 @@ int main ()
 	vp.multByTranslation({-0.5f, -0.6f, -2.f});
 	wolf->setTexture(&wolfTexture);
 	wolf->draw(rastr, vp);
+	std::cout << "Wolf tris: " << wolf->trisCount() << std::endl;
 
 	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
 	vp.setIdentity();
@@ -53,6 +55,7 @@ int main ()
     vp.multByTranslation({0.f, 1.5f, -5.f});
     sphere->setColor({1.f, 0.f, 0.f});
     sphere->draw(rastr, vp);
+	std::cout << "Sphere tris: " << sphere->trisCount() << std::endl;
 
 	auto cube = CubeMesh({2, 2, 2});
 	vp.setIdentity();
