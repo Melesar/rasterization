@@ -17,6 +17,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Buffer/TgaBuffer.cpp.obj
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Data/Triangle.cpp.obj
  ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
@@ -28,11 +29,14 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj
  ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Light/light.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Light/light.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/CubeMesh.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.cpp
@@ -42,8 +46,10 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/CubeMesh.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.cpp
@@ -53,8 +59,10 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cone_mesh.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.cpp
@@ -64,8 +72,10 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cone_mesh.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/cylinder_mesh.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.cpp
@@ -89,7 +99,8 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj
- C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
+ ../GraphicalAspects/Data/math_structs.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj
@@ -112,6 +123,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/Texture/texture.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
@@ -136,6 +148,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Timer/timer.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj
  ../GraphicalAspects/Mesh/vertex.h
+ ../GraphicalAspects/utils.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.cpp

@@ -25,8 +25,6 @@ int main ()
 
 void test()
 {
-	auto m = Mesh::create("sphere.OBJ");
-
 	FILE* f = fopen("obj-test.txt", "r");
 	char line[LINE_LENGTH];
 

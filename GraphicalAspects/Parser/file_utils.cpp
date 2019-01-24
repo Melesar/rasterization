@@ -1,7 +1,3 @@
-//
-// Created by serge on 23.01.2019.
-//
-
 #include <cstring>
 #include "file_utils.h"
 
@@ -44,7 +40,7 @@ void getToken(char *line, char *token, char *content)
 
 void getFloat3(char *content, float3 &f)
 {
-    const int precision = 13;
+    const int precision = 20;
     char buff[precision];
 
     int offset = 0;
@@ -83,11 +79,11 @@ inline void updateData(VertexData &data, char *buffer, int bufferIndex, int vert
 {
     buffer[bufferIndex] = '\0';
     int value = (int) strtol(buffer, nullptr, 10);
-    if ((vertexIndex) == 0) {
+    if (vertexIndex == 0) {
         data.posIndex = value;
-    } else if ((vertexIndex) == 1) {
+    } else if (vertexIndex == 1) {
         data.uvIndex = value;
-    } else if ((vertexIndex) == 2) {
+    } else if (vertexIndex == 2) {
         data.normalIndex = value;
     }
 }

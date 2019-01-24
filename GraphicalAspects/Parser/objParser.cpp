@@ -37,14 +37,11 @@ void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& trian
 }
 
 
-ObjParser::~ObjParser()
-{
-}
-
 void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals)
 {
 	try {
-		std::vector<Vertex> faceVerticies;
+		Vertex faceVertices[4];
+		int verticesParsed = 0;
 		VertexData v;
 		while (getVertex(content, v)) {
 			Vertex vert;
@@ -56,19 +53,19 @@ void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const
 				vert.normal = normals[v.normalIndex];
 			}
 
-			faceVerticies.push_back(vert);
+            faceVertices[verticesParsed++] = vert;
 		}
 
-		if (faceVerticies.size() < 3) {
+		if (verticesParsed < 3) {
 			throw InvalidValue;
 		}
 
-		int trisCount = faceVerticies.size() - 2;
+		int trisCount = verticesParsed - 2;
 		for (size_t i = 0; i < trisCount; i++) {
 			Triangle t;
-			t.v1 = faceVerticies.at(0);
-			t.v2 = faceVerticies.at(i + 1);
-			t.v3 = faceVerticies.at(i + 2);
+			t.v1 = faceVertices[0];
+			t.v2 = faceVertices[i + 1];
+			t.v3 = faceVertices[i + 2];
 
 			triangles.push_back(t);
 		}

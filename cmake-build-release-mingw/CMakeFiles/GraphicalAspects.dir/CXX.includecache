@@ -27,8 +27,8 @@ VertexProcessor/VertexProcessor.h
 ../GraphicalAspects/Light/VertexProcessor/VertexProcessor.h
 
 ../GraphicalAspects/Mesh/vertex.h
-../Data/math_structs.h
-../GraphicalAspects/Data/math_structs.h
+Data/math_structs.h
+../GraphicalAspects/Mesh/Data/math_structs.h
 utils.h
 ../GraphicalAspects/Mesh/utils.h
 
@@ -117,8 +117,8 @@ vector
 -
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
-../Data/math_structs.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
+Data/math_structs.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Data/math_structs.h
 utils.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/utils.h
 

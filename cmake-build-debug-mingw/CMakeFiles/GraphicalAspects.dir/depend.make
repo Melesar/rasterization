@@ -100,7 +100,6 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj: ../Graphical
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/utils.h
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Data/math_structs.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Mesh/vertex.cpp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj: ../GraphicalAspects/Mesh/vertex.h
 

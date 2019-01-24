@@ -12,7 +12,7 @@ class ObjParser
 public:
 
 	void parse(const std::string& fileName, std::vector<Triangle>& triangles);
-	~ObjParser();
+	~ObjParser() = default;
 
 private:
 

@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "../Data/math_structs.h"
+#include "Data/math_structs.h"
 #include "utils.h"
 
 struct Vertex
