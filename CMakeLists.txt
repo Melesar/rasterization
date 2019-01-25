@@ -38,7 +38,9 @@ add_executable(GraphicalAspects
         GraphicalAspects/Mesh/vertex.cpp
         GraphicalAspects/Mesh/vertex.h
         GraphicalAspects/Parser/objParser.cpp
+        GraphicalAspects/Parser/slowObjParser.cpp
         GraphicalAspects/Parser/objParser.h
+        GraphicalAspects/Parser/slowObjParser.h
         GraphicalAspects/Rasterizer/Rasterizer.cpp
         GraphicalAspects/Rasterizer/Rasterizer.h
         GraphicalAspects/Tests/main_tests.h

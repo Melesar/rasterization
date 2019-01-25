@@ -78,7 +78,7 @@ void getFloat3(char *content, float3 &f)
 inline void updateData(VertexData &data, char *buffer, int bufferIndex, int vertexIndex)
 {
     buffer[bufferIndex] = '\0';
-    int value = (int) strtol(buffer, nullptr, 10);
+    int value = (int) strtol(buffer, nullptr, 10) - 1;
     if (vertexIndex == 0) {
         data.posIndex = value;
     } else if (vertexIndex == 1) {

@@ -89,6 +89,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh.cpp.obj
  ../GraphicalAspects/Data/math_structs.h
  ../GraphicalAspects/Mesh/vertex.h
  ../GraphicalAspects/Parser/objParser.h
+ ../GraphicalAspects/Parser/slowObjParser.h
  ../GraphicalAspects/Texture/texture.h
  ../GraphicalAspects/VertexProcessor/VertexProcessor.h
  ../GraphicalAspects/utils.h
@@ -117,6 +118,15 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.cpp
  C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj
+ ../GraphicalAspects/Data/math_structs.h
+ ../GraphicalAspects/Mesh/vertex.h
+ ../GraphicalAspects/utils.h
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.cpp
+ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.h
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
  ../GraphicalAspects/Data/Triangle.h
  ../GraphicalAspects/Light/light.h

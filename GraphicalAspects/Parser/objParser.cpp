@@ -6,100 +6,78 @@
 #include <file_utils.h>
 #include <cstring>
 
-void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& triangles)
+namespace optimization
 {
-	FILE* f = fopen(fileName.c_str(), "r");
-
-	std::vector<float3> verticies, uvs, normals;
-	char line [LINE_LENGTH];
-
-	while (readLine(f, line))
+	void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& triangles)
 	{
-	    char token[3];
-	    char content[LINE_LENGTH - 3];
-	    getToken(line, token, content);
-	    float3 v;
-		if (strcmp(token, "v") == 0) {
-            getFloat3(content, v);
-            *fDebug << "v: " << v << std:: endl;
-			verticies.push_back(v);
-		} else if (strcmp(token, "vt") == 0) {
-		    getFloat3(content, v);
-            *fDebug << "uv: " << v << std:: endl;
-			uvs.push_back(v);
-		} else if (strcmp(token, "vn") == 0) {
-		    getFloat3(content, v);
-            *fDebug << "normal: " << v << std:: endl;
-            normals.push_back(v);
-		} else if (strcmp(token, "f") == 0) {
-			parseFace(content, triangles, verticies, uvs, normals);
+		FILE* f = fopen(fileName.c_str(), "r");
+
+		std::vector<float3> verticies, uvs, normals;
+		char line [LINE_LENGTH];
+
+		while (readLine(f, line))
+		{
+			char token[3];
+			char content[LINE_LENGTH - 3];
+			getToken(line, token, content);
+			float3 v;
+			if (strcmp(token, "v") == 0) {
+				getFloat3(content, v);
+				verticies.push_back(v);
+			} else if (strcmp(token, "vt") == 0) {
+				getFloat3(content, v);
+				uvs.push_back(v);
+			} else if (strcmp(token, "vn") == 0) {
+				getFloat3(content, v);
+				normals.push_back(v);
+			} else if (strcmp(token, "f") == 0) {
+				parseFace(content, triangles, verticies, uvs, normals);
+			}
 		}
+
+		fclose(f);
 	}
 
-	fclose(f);
-}
 
+	void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals)
+	{
+		try {
+			Vertex faceVertices[4];
+			int verticesParsed = 0;
+			VertexData v;
+			while (getVertex(content, v)) {
+				Vertex vert;
+				vert.position = verticies[v.posIndex];
+				if (v.uvIndex > 0) {
+					vert.uv = uvs[v.uvIndex];
+				}
+				if (v.normalIndex > 0) {
+					vert.normal = normals[v.normalIndex];
+				}
 
-void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals)
-{
-	try {
-		Vertex faceVertices[4];
-		int verticesParsed = 0;
-		VertexData v;
-		while (getVertex(content, v)) {
-			Vertex vert;
-			vert.position = verticies[v.posIndex];
-			if (v.uvIndex > 0) {
-				vert.uv = uvs[v.uvIndex];
+				faceVertices[verticesParsed++] = vert;
 			}
-			if (v.normalIndex > 0) {
-				vert.normal = normals[v.normalIndex];
+
+			if (verticesParsed < 3) {
+				throw InvalidValue;
 			}
 
-			std::cout << v << std::endl;
-			faceVertices[verticesParsed++] = vert;
-		}
+			int trisCount = verticesParsed - 2;
+			for (size_t i = 0; i < trisCount; i++) {
+				Triangle t;
+				t.v1 = faceVertices[0];
+				t.v2 = faceVertices[i + 1];
+				t.v3 = faceVertices[i + 2];
 
-		if (verticesParsed < 3) {
-			throw InvalidValue;
-		}
-
-		int trisCount = verticesParsed - 2;
-		for (size_t i = 0; i < trisCount; i++) {
-			Triangle t;
-			t.v1 = faceVertices[0];
-			t.v2 = faceVertices[i + 1];
-			t.v3 = faceVertices[i + 2];
-
-			triangles.push_back(t);
-		}
-
-
-		for (int i = 0; i < 3; ++i) {
-			for (int j = triangles.size() - trisCount; j < triangles.size(); ++j) {
-				auto t = triangles.at(j);
-				auto * pt = reinterpret_cast<float3*>(&t);
-				float3 pos = *(pt + 3 * i);
-				*fDebug << pos << "\t\t";
+				triangles.push_back(t);
 			}
-			*fDebug << std::endl;
 		}
-		*fDebug << std::endl;
-	}
-	catch (const int& err) {
-		if (err == InvalidValue) {
-			std::cout << "Failed to parse face " << content << std::endl;
+		catch (const int& err) {
+			if (err == InvalidValue) {
+				std::cout << "Failed to parse face " << content << std::endl;
+			}
 		}
 	}
 }
 
-ObjParser::ObjParser()
-{
-    fDebug = new std::ofstream("debug.txt");
-}
 
-ObjParser::~ObjParser()
-{
-    fDebug->close();
-    delete fDebug;
-}

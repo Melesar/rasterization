@@ -6,19 +6,17 @@
 #include "../Data/Triangle.h"
 #include "../Mesh/vertex.h"
 
-
-class ObjParser
+namespace optimization
 {
-public:
+	class ObjParser
+	{
+	public:
 
-	void parse(const std::string& fileName, std::vector<Triangle>& triangles);
-	~ObjParser();
-	ObjParser();
+		void parse(const std::string& fileName, std::vector<Triangle>& triangles);
 
-private:
+	private:
 
-	const int InvalidValue = -13;
-	std::ofstream* fDebug;
-
-	void parseFace(char* content, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals);
-};
+		const int InvalidValue = -13;
+		void parseFace(char* content, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals);
+	};
+}

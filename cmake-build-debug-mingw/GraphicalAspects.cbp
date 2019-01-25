@@ -177,6 +177,12 @@
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/prodObjParser.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/prodObjParser.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.cpp">
 			<Option target="GraphicalAspects"/>
 		</Unit>

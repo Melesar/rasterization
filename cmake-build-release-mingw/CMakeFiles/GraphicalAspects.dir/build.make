@@ -210,10 +210,24 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\objParser.cpp -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\objParser.cpp.s
 
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj: ../GraphicalAspects/Parser/slowObjParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj"
+	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\slowObjParser.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\slowObjParser.cpp
+
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.i"
+	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\slowObjParser.cpp > CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\slowObjParser.cpp.i
+
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.s"
+	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\slowObjParser.cpp -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\slowObjParser.cpp.s
+
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj: ../GraphicalAspects/Rasterizer/Rasterizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Rasterizer\Rasterizer.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Rasterizer\Rasterizer.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.i: cmake_force
@@ -227,7 +241,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.s: cm
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj: ../GraphicalAspects/Tests/tests.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Tests\tests.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Tests\tests.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.i: cmake_force
@@ -241,7 +255,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.s: cmake_force
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj: ../GraphicalAspects/VertexProcessor/VertexProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\VertexProcessor\VertexProcessor.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\VertexProcessor\VertexProcessor.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.i: cmake_force
@@ -255,7 +269,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj: ../GraphicalAspects/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\main.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\main.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.i: cmake_force
@@ -269,7 +283,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/main.cpp.s: cmake_force
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj: ../GraphicalAspects/Light/light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Light\light.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Light\light.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.i: cmake_force
@@ -283,7 +297,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Light/light.cpp.s: cmake_force
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj: ../GraphicalAspects/Texture/texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Texture\texture.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Texture\texture.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.i: cmake_force
@@ -297,7 +311,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.s: cmake_fo
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj: ../GraphicalAspects/Timer/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Timer\timer.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Timer\timer.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.i: cmake_force
@@ -311,7 +325,7 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.s: cmake_force
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj: ../GraphicalAspects/Parser/file_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\file_utils.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\file_utils.cpp
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.i: cmake_force
@@ -335,6 +349,7 @@ GraphicalAspects_OBJECTS = \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj" \
+"CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj" \
@@ -358,6 +373,7 @@ GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj
+GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj
@@ -370,7 +386,7 @@ GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/build.make
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/linklibs.rsp
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/objects1.rsp
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable GraphicalAspects.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-release-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable GraphicalAspects.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GraphicalAspects.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

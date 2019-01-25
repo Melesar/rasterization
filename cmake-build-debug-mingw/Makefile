@@ -473,6 +473,33 @@ GraphicalAspects/Parser/objParser.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s
 .PHONY : GraphicalAspects/Parser/objParser.cpp.s
 
+GraphicalAspects/Parser/prodObjParser.obj: GraphicalAspects/Parser/prodObjParser.cpp.obj
+
+.PHONY : GraphicalAspects/Parser/prodObjParser.obj
+
+# target to build an object file
+GraphicalAspects/Parser/prodObjParser.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj
+.PHONY : GraphicalAspects/Parser/prodObjParser.cpp.obj
+
+GraphicalAspects/Parser/prodObjParser.i: GraphicalAspects/Parser/prodObjParser.cpp.i
+
+.PHONY : GraphicalAspects/Parser/prodObjParser.i
+
+# target to preprocess a source file
+GraphicalAspects/Parser/prodObjParser.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.i
+.PHONY : GraphicalAspects/Parser/prodObjParser.cpp.i
+
+GraphicalAspects/Parser/prodObjParser.s: GraphicalAspects/Parser/prodObjParser.cpp.s
+
+.PHONY : GraphicalAspects/Parser/prodObjParser.s
+
+# target to generate assembly for a file
+GraphicalAspects/Parser/prodObjParser.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.s
+.PHONY : GraphicalAspects/Parser/prodObjParser.cpp.s
+
 GraphicalAspects/Rasterizer/Rasterizer.obj: GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
 
 .PHONY : GraphicalAspects/Rasterizer/Rasterizer.obj
@@ -683,6 +710,9 @@ help:
 	@echo ... GraphicalAspects/Parser/objParser.obj
 	@echo ... GraphicalAspects/Parser/objParser.i
 	@echo ... GraphicalAspects/Parser/objParser.s
+	@echo ... GraphicalAspects/Parser/prodObjParser.obj
+	@echo ... GraphicalAspects/Parser/prodObjParser.i
+	@echo ... GraphicalAspects/Parser/prodObjParser.s
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.obj
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.i
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.s
