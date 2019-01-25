@@ -13,6 +13,7 @@ public:
 
 	void parse(const std::string& fileName, std::vector<Triangle>& triangles);
 	~ObjParser();
+	ObjParser();
 
 private:
 
@@ -23,4 +24,6 @@ private:
 	float3 getNormal(std::istream& stream);
 	Vertex getVertex (std::istream& stream, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals);
 	void parseFace(std::stringstream& stream, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals);
+
+	std::ofstream* fDebug;
 };

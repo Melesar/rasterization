@@ -17,10 +17,13 @@ void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& trian
 		sstream >> token;
 		if (token == "v") {
 			verticies.push_back(getVertex(sstream));
+            *fDebug << "v: " << verticies.at(verticies.size() - 1)<< std::endl;
 		} else if (token == "vt") {
 			uvs.push_back(getUV(sstream));
+            *fDebug << "uv: " << uvs.at(uvs.size() - 1)<< std::endl;
 		} else if (token == "vn") {
 			normals.push_back(getNormal(sstream));
+            *fDebug << "normal: " << normals.at(normals.size() - 1)<< std::endl;
 		} else if (token == "f") {
 			parseFace(sstream, triangles, verticies, uvs, normals);
 		}
@@ -30,6 +33,8 @@ void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& trian
 
 ObjParser::~ObjParser()
 {
+    fDebug->close();
+    delete fDebug;
 }
 
 float3 ObjParser::getVertex(std::istream & stream)
@@ -107,17 +112,28 @@ void ObjParser::parseFace(std::stringstream & stream, std::vector<Triangle>& tri
 			t.v2 = faceVerticies.at(i + 1);
 			t.v3 = faceVerticies.at(i + 2);
 
-//			if (normals.empty()) {
-//			    t.calculateNormals();
-//			}
-
 			triangles.push_back(t);
 		}
 
+		auto tris = triangles.size();
+        for (int i = 0; i < 3; ++i) {
+            for (int j = tris - trisCount; j < tris; ++j) {
+                auto t = triangles.at(j);
+                auto p = reinterpret_cast<float3*>(&t + 3 * i);
+                *fDebug << *p << "\t\t";
+            }
+            *fDebug << std::endl;
+        }
+        *fDebug << std::endl;
 	}
 	catch (const int& err) {
 		if (err == InvalidValue) {
 			std::cout << "Failed to parse face " << stream.str() << std::endl;
 		}
 	}
+}
+
+ObjParser::ObjParser()
+{
+    fDebug = new std::ofstream("debug.txt");
 }

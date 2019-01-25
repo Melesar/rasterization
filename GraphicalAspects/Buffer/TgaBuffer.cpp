@@ -18,8 +18,6 @@ void TgaBuffer::flush()
 {
 	std::ofstream f(_filename, std::ios::out | std::ios::binary);
 
-	std::cout << "Actual image header: " << std::endl << header << std::endl;
-
 	unsigned short header[] = {
 		0x0000, 0x0002, 0x0000, 0x0000, 0x0000, 0x0000,
 		_width, _height,
@@ -30,16 +28,6 @@ void TgaBuffer::flush()
 	f.write(reinterpret_cast<char*>(_color), 4 * _length);
 	
 	f.close();
-
-	std::ofstream oHeader ("header.dat");
-	oHeader.write(reinterpret_cast<char*>(&this->header), 18);
-	oHeader.close();
-
-	std::ifstream iHeader("header.dat");
-	TgaHeader hh;
-	parseHeader(iHeader, hh);
-	std::cout << "Written header: " << std::endl << hh << std::endl;
-	std::cin.get();
 }
 
 TgaBuffer::TgaBuffer(const std::string &fileName) : Buffer (0, 0, 0, 0)
