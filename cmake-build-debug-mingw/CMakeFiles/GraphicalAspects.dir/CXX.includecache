@@ -19,11 +19,12 @@ ostream
 -
 
 ../GraphicalAspects/Mesh/vertex.h
-../Data/math_structs.h
-../GraphicalAspects/Data/math_structs.h
+Data/math_structs.h
+../GraphicalAspects/Mesh/Data/math_structs.h
 utils.h
 ../GraphicalAspects/Mesh/utils.h
 
+<<<<<<< HEAD
 ../GraphicalAspects/Parser/objParser.h
 string
 -
@@ -35,6 +36,13 @@ map
 ../GraphicalAspects/Data/Triangle.h
 ../Mesh/vertex.h
 ../GraphicalAspects/Mesh/vertex.h
+=======
+../GraphicalAspects/Parser/file_utils.h
+cstdio
+-
+Data/math_structs.h
+-
+>>>>>>> optimization
 
 ../GraphicalAspects/Texture/texture.h
 string
@@ -44,7 +52,19 @@ memory
 Data/math_structs.h
 -
 
+<<<<<<< HEAD
 ../GraphicalAspects/VertexProcessor/VertexProcessor.h
+=======
+../GraphicalAspects/Timer/timer.h
+string
+-
+stack
+-
+chrono
+-
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
+>>>>>>> optimization
 ../Data/math_structs.h
 ../GraphicalAspects/Data/math_structs.h
 ../Data/Triangle.h
@@ -89,8 +109,8 @@ vector
 -
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
-../Data/math_structs.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
+Data/math_structs.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Data/math_structs.h
 utils.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/utils.h
 
@@ -122,6 +142,25 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
 vector
 -
 VertexProcessor/VertexProcessor.h
+<<<<<<< HEAD
+=======
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
+Mesh/TriangleMesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/TriangleMesh.h
+Mesh/CubeMesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/CubeMesh.h
+Mesh/cone_mesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h
+Mesh/cylinder_mesh.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
+utils.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
+Timer/timer.h
+-
+Parser/file_utils.h
+-
+cstring
+>>>>>>> optimization
 -
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h

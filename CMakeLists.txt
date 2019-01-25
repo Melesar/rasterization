@@ -38,7 +38,9 @@ add_executable(GraphicalAspects
         GraphicalAspects/Mesh/vertex.cpp
         GraphicalAspects/Mesh/vertex.h
         GraphicalAspects/Parser/objParser.cpp
+        GraphicalAspects/Parser/slowObjParser.cpp
         GraphicalAspects/Parser/objParser.h
+        GraphicalAspects/Parser/slowObjParser.h
         GraphicalAspects/Rasterizer/Rasterizer.cpp
         GraphicalAspects/Rasterizer/Rasterizer.h
         GraphicalAspects/Tests/main_tests.h
@@ -47,6 +49,6 @@ add_executable(GraphicalAspects
         GraphicalAspects/VertexProcessor/VertexProcessor.cpp
         GraphicalAspects/VertexProcessor/VertexProcessor.h
         GraphicalAspects/main.cpp
-        GraphicalAspects/utils.h GraphicalAspects/Light/Light.h GraphicalAspects/Light/light.cpp GraphicalAspects/Texture/texture.h GraphicalAspects/Texture/texture.cpp)
+        GraphicalAspects/utils.h GraphicalAspects/Light/Light.h GraphicalAspects/Light/light.cpp GraphicalAspects/Texture/texture.h GraphicalAspects/Texture/texture.cpp GraphicalAspects/Timer/timer.cpp GraphicalAspects/Timer/timer.h GraphicalAspects/Parser/file_utils.h GraphicalAspects/Parser/file_utils.cpp)
 
 #target_link_libraries(GraphicalAspects ${SDL2_LIBRARIES})

@@ -3,137 +3,81 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <file_utils.h>
+#include <cstring>
 
-void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& triangles)
+namespace optimization
 {
-	std::ifstream file(fileName.c_str());
-	std::string s;
+	void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& triangles)
+	{
+		FILE* f = fopen(fileName.c_str(), "r");
 
-	std::vector<float3> verticies, uvs, normals;
-	while (std::getline(file, s)) {
-		std::string token;
-		std::stringstream sstream(s);
+		std::vector<float3> verticies, uvs, normals;
+		char line [LINE_LENGTH];
 
-		sstream >> token;
-		if (token == "v") {
-			verticies.push_back(getVertex(sstream));
-            *fDebug << "v: " << verticies.at(verticies.size() - 1)<< std::endl;
-		} else if (token == "vt") {
-			uvs.push_back(getUV(sstream));
-            *fDebug << "uv: " << uvs.at(uvs.size() - 1)<< std::endl;
-		} else if (token == "vn") {
-			normals.push_back(getNormal(sstream));
-            *fDebug << "normal: " << normals.at(normals.size() - 1)<< std::endl;
-		} else if (token == "f") {
-			parseFace(sstream, triangles, verticies, uvs, normals);
-		}
-	}
-}
-
-
-ObjParser::~ObjParser()
-{
-    fDebug->close();
-    delete fDebug;
-}
-
-float3 ObjParser::getVertex(std::istream & stream)
-{
-	float3 result;
-	stream >> result.x >> result.y >> result.z;
-
-	return result;
-}
-
-float3 ObjParser::getUV(std::istream & stream)
-{
-	float3 uv;
-	stream >> uv.x >> uv.y;
-
-	return uv;
-}
-
-float3 ObjParser::getNormal(std::istream & stream)
-{
-	float3 normal = getVertex(stream);
-	return normalize(normal);
-}
-
-Vertex ObjParser::getVertex(std::istream & stream, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals)
-{
-	Vertex v;
-
-	std::string vertString;
-	stream >> vertString;
-
-	char delim = '/';
-	int pos = 0;
-	int vectorIndex = 0;
-	while (pos != std::string::npos) {
-		pos = vertString.find('/');
-
-		try	{
-			int index = std::stoi(vertString.substr(0, pos)) - 1;
-			if (vectorIndex == 0) {
-				v.position = verticies.at(index);
-			} else if (vectorIndex == 1) {
-				v.uv = uvs.at(index);
-			} else if (vectorIndex == 2) {
-				v.normal = normals.at(index);
+		while (readLine(f, line))
+		{
+			char token[3];
+			char content[LINE_LENGTH - 3];
+			getToken(line, token, content);
+			float3 v;
+			if (strcmp(token, "v") == 0) {
+				getFloat3(content, v);
+				verticies.push_back(v);
+			} else if (strcmp(token, "vt") == 0) {
+				getFloat3(content, v);
+				uvs.push_back(v);
+			} else if (strcmp(token, "vn") == 0) {
+				getFloat3(content, v);
+				normals.push_back(v);
+			} else if (strcmp(token, "f") == 0) {
+				parseFace(content, triangles, verticies, uvs, normals);
 			}
-		} catch (const std::invalid_argument&)	{
-		} catch (const std::out_of_range&) {
-			throw InvalidValue;
 		}
 
-		vertString.erase(0, pos + 1);
-		vectorIndex += 1;
+		fclose(f);
 	}
 
-	return v;
-}
 
-void ObjParser::parseFace(std::stringstream & stream, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals)
-{
-	try {
-		std::vector<Vertex> faceVerticies;
-		while (!stream.eof()) {
-			faceVerticies.push_back(getVertex(stream, verticies, uvs, normals));
+	void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const std::vector<float3>& verticies, const std::vector<float3>& uvs, const std::vector<float3>& normals)
+	{
+		try {
+			Vertex faceVertices[4];
+			int verticesParsed = 0;
+			VertexData v;
+			while (getVertex(content, v)) {
+				Vertex vert;
+				vert.position = verticies[v.posIndex];
+				if (v.uvIndex > 0) {
+					vert.uv = uvs[v.uvIndex];
+				}
+				if (v.normalIndex > 0) {
+					vert.normal = normals[v.normalIndex];
+				}
+
+				faceVertices[verticesParsed++] = vert;
+			}
+
+			if (verticesParsed < 3) {
+				throw InvalidValue;
+			}
+
+			int trisCount = verticesParsed - 2;
+			for (size_t i = 0; i < trisCount; i++) {
+				Triangle t;
+				t.v1 = faceVertices[0];
+				t.v2 = faceVertices[i + 1];
+				t.v3 = faceVertices[i + 2];
+
+				triangles.push_back(t);
+			}
 		}
-
-		if (faceVerticies.size() < 3) {
-			throw InvalidValue;
-		}
-
-		int trisCount = faceVerticies.size() - 2;
-		for (size_t i = 0; i < trisCount; i++) {
-			Triangle t;
-			t.v1 = faceVerticies.at(0);
-			t.v2 = faceVerticies.at(i + 1);
-			t.v3 = faceVerticies.at(i + 2);
-
-			triangles.push_back(t);
-		}
-
-		auto tris = triangles.size();
-        for (int i = 0; i < 3; ++i) {
-            for (int j = tris - trisCount; j < tris; ++j) {
-                auto t = triangles.at(j);
-                auto p = reinterpret_cast<float3*>(&t + 3 * i);
-                *fDebug << *p << "\t\t";
-            }
-            *fDebug << std::endl;
-        }
-        *fDebug << std::endl;
-	}
-	catch (const int& err) {
-		if (err == InvalidValue) {
-			std::cout << "Failed to parse face " << stream.str() << std::endl;
+		catch (const int& err) {
+			if (err == InvalidValue) {
+				std::cout << "Failed to parse face " << content << std::endl;
+			}
 		}
 	}
 }
 
-ObjParser::ObjParser()
-{
-    fDebug = new std::ofstream("debug.txt");
-}
+

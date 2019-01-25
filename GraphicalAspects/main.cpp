@@ -9,9 +9,50 @@
 #include "Mesh/cone_mesh.h"
 #include "Mesh/cylinder_mesh.h"
 #include "utils.h"
+#include <Timer/timer.h>
+#include <Parser/file_utils.h>
+#include <cstring>
+
+void buildAndRenderScene();
+
+void test();
 
 int main ()
 {
+	//test();
+	buildAndRenderScene();
+}
+
+void test()
+{
+	FILE* f = fopen("obj-test.txt", "r");
+	char line[LINE_LENGTH];
+
+	while(readLine(f, line))
+	{
+		std::cout << line << std::endl;
+
+		char token[3];
+		char content[LINE_LENGTH - 3];
+		getToken(line, token, content);
+
+		if (strcmp(token, "v") == 0 || strcmp(token, "vn") == 0) {
+		    float3 value;
+		    getFloat3(content, value);
+		    std::cout << token << ": " << value << std::endl;
+		} else if (strcmp(token, "f") == 0) {
+		    VertexData v;
+		    while (getVertex(content, v)) {
+		        std::cout << "Vertex: " << v << std::endl;
+		    }
+		}
+	}
+}
+
+void buildAndRenderScene()
+{
+	Timer timer;
+	timer.startSample("Program");
 	TgaBuffer buff(512, 512);
 
 	VertexProcessor vp;
@@ -28,66 +69,69 @@ int main ()
 	dirLight.diffuse = {0.3, 0.3, 0.3};
 	rastr.addLight(&dirLight);
 
+	timer.startSample("Textures creation");
 	auto stoneTexture = Texture("stone.tga");
 	auto wolfTexture = Texture("grass.tga");
+	timer.finishSample();
 
+	timer.startSample("Meshes creation");
 	auto teapot = std::unique_ptr<Mesh>(Mesh::create("teapot.obj"));
+	teapot->setTexture(&stoneTexture);
+	std::cout << "Teapot tris: " << teapot->trisCount() << std::endl;
+
+	auto wolf = std::unique_ptr<Mesh>(Mesh::create("Wolf.obj"));
+	wolf->setTexture(&wolfTexture);
+	std::cout << "Wolf tris: " << wolf->trisCount() << std::endl;
+
+	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
+	sphere->setColor({1.f, 0.f, 0.f});
+	std::cout << "Sphere tris: " << sphere->trisCount() << std::endl;
+	timer.finishSample();
+
+	timer.startSample("Meshes rendering");
 	vp.setIdentity();
 	vp.multByScale({0.5f, 0.5f, 0.5f});
 	vp.multByRotation({1, 0, 0}, -90.f);
 	vp.multByTranslation({ 5.f, -1.f, -15 });
-	teapot->setTexture(&stoneTexture);
 	teapot->draw(rastr, vp);
-	std::cout << "Teapot tris: " << teapot->trisCount() << std::endl;
 
-	auto wolf = std::unique_ptr<Mesh>(Mesh::create("Wolf.obj"));
 	vp.setIdentity();
 	vp.multByScale({1.5f, 1.5f, 1.5f});
 	vp.multByRotation({0, 1.f, 0}, 90.f);
 	vp.multByTranslation({-0.5f, -0.6f, -2.f});
-	wolf->setTexture(&wolfTexture);
 	wolf->draw(rastr, vp);
-	std::cout << "Wolf tris: " << wolf->trisCount() << std::endl;
 
-	auto sphere = std::unique_ptr<Mesh>(Mesh::create("sphere.OBJ"));
 	vp.setIdentity();
 	vp.multByScale({0.8f, 0.8f, 0.8f});
-    vp.multByTranslation({0.f, 1.5f, -5.f});
-    sphere->setColor({1.f, 0.f, 0.f});
-    sphere->draw(rastr, vp);
-	std::cout << "Sphere tris: " << sphere->trisCount() << std::endl;
+	vp.multByTranslation({0.f, 1.5f, -5.f});
+	sphere->draw(rastr, vp);
+	timer.finishSample();
 
 	auto cube = CubeMesh({2, 2, 2});
+	cube.setColor({1, -0.5f, 0});
+
+	auto cylinder = CylinderMesh({0, 0, 0}, 4, 6, 16);
+	cylinder.setColor({0, 0, 1});
+
+	timer.startSample("Primitives rendering");
+
 	vp.setIdentity();
 	vp.multByScale({0.3f, 0.3f, 0.3f});
 	vp.multByRotation({0, 1.f, 0}, 45.f);
 	vp.multByTranslation({-6.f, 4.f, -20.f});
-	cube.setColor({1, -0.5f, 0});
 	cube.draw(rastr, vp);
 
-    vp.setIdentity();
-    vp.multByScale({0.5f, 0.5f, 0.5f});
-    vp.multByRotation({0, 1.f, 0}, 60.f);
-    vp.multByTranslation({-6.f, -8.f, -20.f});
-    cube.draw(rastr, vp);
-
-	auto cone = ConeMesh(3, 4);
 	vp.setIdentity();
-	vp.multByTranslation({0, 0.5f, -10});
-//	vp.multByTranslation({7, 5, -20});
-	cone.setColor({0, 1, 0});
-	//cone.draw(rastr, vp);
+	vp.multByScale({0.5f, 0.5f, 0.5f});
+	vp.multByRotation({0, 1.f, 0}, 60.f);
+	vp.multByTranslation({-6.f, -8.f, -20.f});
+	cube.draw(rastr, vp);
 
-	vp.setIdentity();
-	vp.multByRotation({0, 0.6f, 0.6f}, 57.f);
-    vp.multByTranslation({-8, 4, -20});
-    //cone.draw(rastr, vp);
-
-	auto cylinder = CylinderMesh({0, 0, 0}, 4, 6, 16);
 	vp.setIdentity();
 	vp.multByTranslation({4, -6.f, -15.f});
-	cylinder.setColor({0, 0, 1});
 	cylinder.draw(rastr, vp);
+	timer.finishSample();
 
-    buff.save("f.tga");
+	buff.save("f.tga");
+	timer.finishSample();
 }

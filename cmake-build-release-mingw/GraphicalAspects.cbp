@@ -165,10 +165,22 @@
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.cpp">
 			<Option target="GraphicalAspects"/>
 		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.cpp">
@@ -190,6 +202,12 @@
 			<Option target="GraphicalAspects"/>
 		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.h">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Timer/timer.cpp">
+			<Option target="GraphicalAspects"/>
+		</Unit>
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Timer/timer.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.cpp">

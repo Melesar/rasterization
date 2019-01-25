@@ -38,8 +38,6 @@ TgaBuffer::TgaBuffer(const std::string &fileName) : Buffer (0, 0, 0, 0)
 	int width = header.width;
 	int height = header.height;
 
-	std::cout << fileName << std::endl << header << std::endl;
-
 	setSize(0, 0, width, height);
 	clearDepth();
 

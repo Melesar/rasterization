@@ -6,22 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../GraphicalAspects/Buffer/Buffer.h
-../Data/math_structs.h
-../GraphicalAspects/Data/math_structs.h
-
-../GraphicalAspects/Buffer/ITgaSavable.h
-string
--
-
-../GraphicalAspects/Buffer/TgaBuffer.h
-utils.h
--
-ITgaSavable.h
-../GraphicalAspects/Buffer/ITgaSavable.h
-Buffer.h
-../GraphicalAspects/Buffer/Buffer.h
-
 ../GraphicalAspects/Data/Triangle.h
 algorithm
 -
@@ -43,8 +27,40 @@ VertexProcessor/VertexProcessor.h
 ../GraphicalAspects/Light/VertexProcessor/VertexProcessor.h
 
 ../GraphicalAspects/Mesh/vertex.h
-../Data/math_structs.h
-../GraphicalAspects/Data/math_structs.h
+Data/math_structs.h
+../GraphicalAspects/Mesh/Data/math_structs.h
+utils.h
+../GraphicalAspects/Mesh/utils.h
+
+../GraphicalAspects/Parser/file_utils.h
+cstdio
+-
+Data/math_structs.h
+-
+
+../GraphicalAspects/Parser/objParser.h
+string
+-
+vector
+-
+map
+-
+../Data/Triangle.h
+../GraphicalAspects/Data/Triangle.h
+../Mesh/vertex.h
+../GraphicalAspects/Mesh/vertex.h
+
+../GraphicalAspects/Parser/slowObjParser.h
+string
+-
+vector
+-
+map
+-
+../Data/Triangle.h
+../GraphicalAspects/Data/Triangle.h
+../Mesh/vertex.h
+../GraphicalAspects/Mesh/vertex.h
 
 ../GraphicalAspects/Texture/texture.h
 string
@@ -52,6 +68,14 @@ string
 memory
 -
 Data/math_structs.h
+-
+
+../GraphicalAspects/Timer/timer.h
+string
+-
+stack
+-
+chrono
 -
 
 ../GraphicalAspects/VertexProcessor/VertexProcessor.h
@@ -66,32 +90,12 @@ Data/math_structs.h
 complex
 -
 
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.cpp
-Buffer.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
-../utils.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
-fstream
--
-memory
--
-
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
 ../Data/math_structs.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/ITgaSavable.h
 string
--
-
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/TgaBuffer.cpp
-TgaBuffer.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/TgaBuffer.h
-fstream
--
-iostream
--
-iomanip
 -
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/TgaBuffer.h
@@ -101,6 +105,14 @@ ITgaSavable.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/ITgaSavable.h
 Buffer.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
+fstream
+-
+iostream
+-
+iomanip
+-
+bitset
+-
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
 algorithm
@@ -126,12 +138,6 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cone_mesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
 
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.cpp
-cylinder_mesh.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
-cmath
--
-
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
 mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
@@ -141,8 +147,10 @@ mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/mesh.h
 Texture/texture.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Texture/texture.h
-../Parser/objParser.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h
+Parser/objParser.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Parser/objParser.h
+Parser/slowObjParser.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Parser/slowObjParser.h
 iostream
 -
 
@@ -157,8 +165,36 @@ vector
 -
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
-../Data/math_structs.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
+Data/math_structs.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/Data/math_structs.h
+utils.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/utils.h
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp
+cstring
+-
+file_utils.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.h
+cstdio
+-
+Data/math_structs.h
+-
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.cpp
+objParser.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h
+fstream
+-
+iostream
+-
+sstream
+-
+file_utils.h
+-
+cstring
+-
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h
 string
@@ -172,17 +208,27 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
 ../Mesh/vertex.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
 
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.cpp
-Rasterizer.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
-../Buffer/Buffer.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Buffer/Buffer.h
-../utils.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
-Light/light.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Light/light.h
-Texture/texture.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Texture/texture.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.cpp
+slowObjParser.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.h
+fstream
+-
+iostream
+-
+sstream
+-
+
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.h
+string
+-
+vector
+-
+map
+-
+../Data/Triangle.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/Triangle.h
+../Mesh/vertex.h
+C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.h
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.h
 ../Data/Triangle.h
@@ -198,41 +244,9 @@ C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.h
 iostream
 -
 
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.cpp
-tests.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.h
-iostream
--
-../Data/math_structs.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Data/math_structs.h
-../utils.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
-
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.h
 string
 -
-
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.cpp
-Buffer/TgaBuffer.h
--
-utils.h
--
-texture.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.h
-
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.h
-string
--
-memory
--
-Data/math_structs.h
--
-
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.cpp
-VertexProcessor.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
-../utils.h
-C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/VertexProcessor/VertexProcessor.h
 ../Data/math_structs.h
@@ -263,6 +277,12 @@ Mesh/cylinder_mesh.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/cylinder_mesh.h
 utils.h
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
+Timer/timer.h
+-
+Parser/file_utils.h
+-
+cstring
+-
 
 C:/Content/Projects/GraphicalAspects/GraphicalAspects/utils.h
 Data/math_structs.h

@@ -419,6 +419,33 @@ GraphicalAspects/Mesh/vertex.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.s
 .PHONY : GraphicalAspects/Mesh/vertex.cpp.s
 
+GraphicalAspects/Parser/file_utils.obj: GraphicalAspects/Parser/file_utils.cpp.obj
+
+.PHONY : GraphicalAspects/Parser/file_utils.obj
+
+# target to build an object file
+GraphicalAspects/Parser/file_utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj
+.PHONY : GraphicalAspects/Parser/file_utils.cpp.obj
+
+GraphicalAspects/Parser/file_utils.i: GraphicalAspects/Parser/file_utils.cpp.i
+
+.PHONY : GraphicalAspects/Parser/file_utils.i
+
+# target to preprocess a source file
+GraphicalAspects/Parser/file_utils.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.i
+.PHONY : GraphicalAspects/Parser/file_utils.cpp.i
+
+GraphicalAspects/Parser/file_utils.s: GraphicalAspects/Parser/file_utils.cpp.s
+
+.PHONY : GraphicalAspects/Parser/file_utils.s
+
+# target to generate assembly for a file
+GraphicalAspects/Parser/file_utils.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.s
+.PHONY : GraphicalAspects/Parser/file_utils.cpp.s
+
 GraphicalAspects/Parser/objParser.obj: GraphicalAspects/Parser/objParser.cpp.obj
 
 .PHONY : GraphicalAspects/Parser/objParser.obj
@@ -445,6 +472,33 @@ GraphicalAspects/Parser/objParser.s: GraphicalAspects/Parser/objParser.cpp.s
 GraphicalAspects/Parser/objParser.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s
 .PHONY : GraphicalAspects/Parser/objParser.cpp.s
+
+GraphicalAspects/Parser/slowObjParser.obj: GraphicalAspects/Parser/slowObjParser.cpp.obj
+
+.PHONY : GraphicalAspects/Parser/slowObjParser.obj
+
+# target to build an object file
+GraphicalAspects/Parser/slowObjParser.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj
+.PHONY : GraphicalAspects/Parser/slowObjParser.cpp.obj
+
+GraphicalAspects/Parser/slowObjParser.i: GraphicalAspects/Parser/slowObjParser.cpp.i
+
+.PHONY : GraphicalAspects/Parser/slowObjParser.i
+
+# target to preprocess a source file
+GraphicalAspects/Parser/slowObjParser.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.i
+.PHONY : GraphicalAspects/Parser/slowObjParser.cpp.i
+
+GraphicalAspects/Parser/slowObjParser.s: GraphicalAspects/Parser/slowObjParser.cpp.s
+
+.PHONY : GraphicalAspects/Parser/slowObjParser.s
+
+# target to generate assembly for a file
+GraphicalAspects/Parser/slowObjParser.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.s
+.PHONY : GraphicalAspects/Parser/slowObjParser.cpp.s
 
 GraphicalAspects/Rasterizer/Rasterizer.obj: GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
 
@@ -526,6 +580,33 @@ GraphicalAspects/Texture/texture.s: GraphicalAspects/Texture/texture.cpp.s
 GraphicalAspects/Texture/texture.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.s
 .PHONY : GraphicalAspects/Texture/texture.cpp.s
+
+GraphicalAspects/Timer/timer.obj: GraphicalAspects/Timer/timer.cpp.obj
+
+.PHONY : GraphicalAspects/Timer/timer.obj
+
+# target to build an object file
+GraphicalAspects/Timer/timer.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.obj
+.PHONY : GraphicalAspects/Timer/timer.cpp.obj
+
+GraphicalAspects/Timer/timer.i: GraphicalAspects/Timer/timer.cpp.i
+
+.PHONY : GraphicalAspects/Timer/timer.i
+
+# target to preprocess a source file
+GraphicalAspects/Timer/timer.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.i
+.PHONY : GraphicalAspects/Timer/timer.cpp.i
+
+GraphicalAspects/Timer/timer.s: GraphicalAspects/Timer/timer.cpp.s
+
+.PHONY : GraphicalAspects/Timer/timer.s
+
+# target to generate assembly for a file
+GraphicalAspects/Timer/timer.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Timer/timer.cpp.s
+.PHONY : GraphicalAspects/Timer/timer.cpp.s
 
 GraphicalAspects/VertexProcessor/VertexProcessor.obj: GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj
 
@@ -623,9 +704,15 @@ help:
 	@echo ... GraphicalAspects/Mesh/vertex.obj
 	@echo ... GraphicalAspects/Mesh/vertex.i
 	@echo ... GraphicalAspects/Mesh/vertex.s
+	@echo ... GraphicalAspects/Parser/file_utils.obj
+	@echo ... GraphicalAspects/Parser/file_utils.i
+	@echo ... GraphicalAspects/Parser/file_utils.s
 	@echo ... GraphicalAspects/Parser/objParser.obj
 	@echo ... GraphicalAspects/Parser/objParser.i
 	@echo ... GraphicalAspects/Parser/objParser.s
+	@echo ... GraphicalAspects/Parser/slowObjParser.obj
+	@echo ... GraphicalAspects/Parser/slowObjParser.i
+	@echo ... GraphicalAspects/Parser/slowObjParser.s
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.obj
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.i
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.s
@@ -635,6 +722,9 @@ help:
 	@echo ... GraphicalAspects/Texture/texture.obj
 	@echo ... GraphicalAspects/Texture/texture.i
 	@echo ... GraphicalAspects/Texture/texture.s
+	@echo ... GraphicalAspects/Timer/timer.obj
+	@echo ... GraphicalAspects/Timer/timer.i
+	@echo ... GraphicalAspects/Timer/timer.s
 	@echo ... GraphicalAspects/VertexProcessor/VertexProcessor.obj
 	@echo ... GraphicalAspects/VertexProcessor/VertexProcessor.i
 	@echo ... GraphicalAspects/VertexProcessor/VertexProcessor.s

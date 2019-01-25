@@ -1,6 +1,7 @@
 ﻿#include "mesh.h"
 #include "Texture/texture.h"
 #include "Parser/objParser.h"
+#include "Parser/slowObjParser.h"
 #include <iostream>
 
 void Mesh::draw(const Rasterizer& r, VertexProcessor& vp) const
@@ -66,7 +67,7 @@ Mesh::~Mesh()
 
 Mesh* Mesh::create(const std::string& fileName)
 {
-	ObjParser parser;
+	optimization::ObjParser parser;
 
 	std::vector<Triangle> triangles;
 	parser.parse(fileName, triangles);
