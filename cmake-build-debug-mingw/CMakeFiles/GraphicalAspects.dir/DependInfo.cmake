@@ -17,7 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Mesh/vertex.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj"
   "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/file_utils.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/file_utils.cpp.obj"
   "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj"
-  "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/prodObjParser.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj"
+  "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj"
   "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj"
   "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Tests/tests.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj"
   "C:/Content/Projects/GraphicalAspects/GraphicalAspects/Texture/texture.cpp" "C:/Content/Projects/GraphicalAspects/cmake-build-debug-mingw/CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Texture/texture.cpp.obj"

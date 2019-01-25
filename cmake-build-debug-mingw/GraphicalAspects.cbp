@@ -177,10 +177,10 @@
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/objParser.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
-		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/prodObjParser.cpp">
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.cpp">
 			<Option target="GraphicalAspects"/>
 		</Unit>
-		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/prodObjParser.h">
+		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Parser/slowObjParser.h">
 			<Option target="GraphicalAspects"/>
 		</Unit>
 		<Unit filename="C:/Content/Projects/GraphicalAspects/GraphicalAspects/Rasterizer/Rasterizer.cpp">

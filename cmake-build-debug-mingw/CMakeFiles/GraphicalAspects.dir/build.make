@@ -210,19 +210,19 @@ CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s"
 	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\objParser.cpp -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\objParser.cpp.s
 
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj: ../GraphicalAspects/Parser/prodObjParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj"
-	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\prodObjParser.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\prodObjParser.cpp
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj: ../GraphicalAspects/Parser/slowObjParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Content\Projects\GraphicalAspects\cmake-build-debug-mingw\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj"
+	C:\Content\Programs\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\slowObjParser.cpp.obj -c C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\slowObjParser.cpp
 
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.i"
-	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\prodObjParser.cpp > CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\prodObjParser.cpp.i
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.i"
+	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\slowObjParser.cpp > CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\slowObjParser.cpp.i
 
-CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.s"
-	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\prodObjParser.cpp -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\prodObjParser.cpp.s
+CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.s"
+	C:\Content\Programs\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Content\Projects\GraphicalAspects\GraphicalAspects\Parser\slowObjParser.cpp -o CMakeFiles\GraphicalAspects.dir\GraphicalAspects\Parser\slowObjParser.cpp.s
 
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj: CMakeFiles/GraphicalAspects.dir/flags.make
 CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj: CMakeFiles/GraphicalAspects.dir/includes_CXX.rsp
@@ -349,7 +349,7 @@ GraphicalAspects_OBJECTS = \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj" \
-"CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj" \
+"CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj" \
 "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj" \
@@ -373,7 +373,7 @@ GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/mesh
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj
-GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj
+GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj
 GraphicalAspects.exe: CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj

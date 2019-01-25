@@ -473,32 +473,32 @@ GraphicalAspects/Parser/objParser.cpp.s:
 	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.s
 .PHONY : GraphicalAspects/Parser/objParser.cpp.s
 
-GraphicalAspects/Parser/prodObjParser.obj: GraphicalAspects/Parser/prodObjParser.cpp.obj
+GraphicalAspects/Parser/slowObjParser.obj: GraphicalAspects/Parser/slowObjParser.cpp.obj
 
-.PHONY : GraphicalAspects/Parser/prodObjParser.obj
+.PHONY : GraphicalAspects/Parser/slowObjParser.obj
 
 # target to build an object file
-GraphicalAspects/Parser/prodObjParser.cpp.obj:
-	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj
-.PHONY : GraphicalAspects/Parser/prodObjParser.cpp.obj
+GraphicalAspects/Parser/slowObjParser.cpp.obj:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj
+.PHONY : GraphicalAspects/Parser/slowObjParser.cpp.obj
 
-GraphicalAspects/Parser/prodObjParser.i: GraphicalAspects/Parser/prodObjParser.cpp.i
+GraphicalAspects/Parser/slowObjParser.i: GraphicalAspects/Parser/slowObjParser.cpp.i
 
-.PHONY : GraphicalAspects/Parser/prodObjParser.i
+.PHONY : GraphicalAspects/Parser/slowObjParser.i
 
 # target to preprocess a source file
-GraphicalAspects/Parser/prodObjParser.cpp.i:
-	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.i
-.PHONY : GraphicalAspects/Parser/prodObjParser.cpp.i
+GraphicalAspects/Parser/slowObjParser.cpp.i:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.i
+.PHONY : GraphicalAspects/Parser/slowObjParser.cpp.i
 
-GraphicalAspects/Parser/prodObjParser.s: GraphicalAspects/Parser/prodObjParser.cpp.s
+GraphicalAspects/Parser/slowObjParser.s: GraphicalAspects/Parser/slowObjParser.cpp.s
 
-.PHONY : GraphicalAspects/Parser/prodObjParser.s
+.PHONY : GraphicalAspects/Parser/slowObjParser.s
 
 # target to generate assembly for a file
-GraphicalAspects/Parser/prodObjParser.cpp.s:
-	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.s
-.PHONY : GraphicalAspects/Parser/prodObjParser.cpp.s
+GraphicalAspects/Parser/slowObjParser.cpp.s:
+	$(MAKE) -f CMakeFiles\GraphicalAspects.dir\build.make CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.s
+.PHONY : GraphicalAspects/Parser/slowObjParser.cpp.s
 
 GraphicalAspects/Rasterizer/Rasterizer.obj: GraphicalAspects/Rasterizer/Rasterizer.cpp.obj
 
@@ -710,9 +710,9 @@ help:
 	@echo ... GraphicalAspects/Parser/objParser.obj
 	@echo ... GraphicalAspects/Parser/objParser.i
 	@echo ... GraphicalAspects/Parser/objParser.s
-	@echo ... GraphicalAspects/Parser/prodObjParser.obj
-	@echo ... GraphicalAspects/Parser/prodObjParser.i
-	@echo ... GraphicalAspects/Parser/prodObjParser.s
+	@echo ... GraphicalAspects/Parser/slowObjParser.obj
+	@echo ... GraphicalAspects/Parser/slowObjParser.i
+	@echo ... GraphicalAspects/Parser/slowObjParser.s
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.obj
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.i
 	@echo ... GraphicalAspects/Rasterizer/Rasterizer.s

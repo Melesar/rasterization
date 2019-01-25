@@ -10,7 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/TriangleMesh.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Mesh/vertex.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/objParser.cpp.obj"
-  "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/prodObjParser.cpp.obj"
+  "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Parser/slowObjParser.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Rasterizer/Rasterizer.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/Tests/tests.cpp.obj"
   "CMakeFiles/GraphicalAspects.dir/GraphicalAspects/VertexProcessor/VertexProcessor.cpp.obj"
