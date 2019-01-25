@@ -21,13 +21,16 @@ void ObjParser::parse(const std::string & fileName, std::vector<Triangle>& trian
 	    float3 v;
 		if (strcmp(token, "v") == 0) {
             getFloat3(content, v);
+            *fDebug << "v: " << v << std:: endl;
 			verticies.push_back(v);
 		} else if (strcmp(token, "vt") == 0) {
 		    getFloat3(content, v);
+            *fDebug << "uv: " << v << std:: endl;
 			uvs.push_back(v);
 		} else if (strcmp(token, "vn") == 0) {
 		    getFloat3(content, v);
-			normals.push_back(v);
+            *fDebug << "normal: " << v << std:: endl;
+            normals.push_back(v);
 		} else if (strcmp(token, "f") == 0) {
 			parseFace(content, triangles, verticies, uvs, normals);
 		}
@@ -71,10 +74,32 @@ void ObjParser::parseFace(char* content, std::vector<Triangle>& triangles, const
 			triangles.push_back(t);
 		}
 
+
+		for (int i = 0; i < 3; ++i) {
+			for (int j = triangles.size() - trisCount; j < triangles.size(); ++j) {
+				auto t = triangles.at(j);
+				auto * pt = reinterpret_cast<float3*>(&t);
+				float3 pos = *(pt + 3 * i);
+				*fDebug << pos << "\t\t";
+			}
+			*fDebug << std::endl;
+		}
+		*fDebug << std::endl;
 	}
 	catch (const int& err) {
 		if (err == InvalidValue) {
 			std::cout << "Failed to parse face " << content << std::endl;
 		}
 	}
+}
+
+ObjParser::ObjParser()
+{
+    fDebug = new std::ofstream("debug.txt");
+}
+
+ObjParser::~ObjParser()
+{
+    fDebug->close();
+    delete fDebug;
 }
